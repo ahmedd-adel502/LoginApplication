@@ -1,0 +1,147 @@
+.home-login,.signup-log{
+    background-image: linear-gradient(rgba(0,0,0,0.4) ,rgba(0,0,0,0.4)),url(../images/bg-wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home-content{
+    border: 1px solid transparent;
+    width: fit-content;
+    margin-inline: auto;
+    padding-block: 2.1875rem;
+    padding-inline:2.1875rem;
+    box-shadow: 5px 5px 20px 15px rgba(221, 220, 220, 0.067);
+    color: #fff;
+    border-radius: 5%;
+}
+.pacifico{
+    font-family: "Pacifico", cursive;
+}
+h2{
+    font-size: 58px;
+}
+@keyframes shaking {
+    0% {
+        transform: rotate(0deg);
+      }
+      25% {
+        transform: rotate(15deg);
+      }
+      50% {
+        transform: rotate(-15deg);
+      }
+      75% {
+        transform: rotate(10deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+.hand{
+    animation: shaking 1s ease-in-out infinite;
+    transform-origin: bottom center;
+}
+.form-control{
+    border-radius: 0;
+}
+.form-control:focus{
+    box-shadow: none;
+}
+.form-floating>label{
+    color: #fff;
+    font-size: 20px;
+}
+.form-floating>.form-control:focus~label{
+    color: #fff;
+    transform: scale(.85) translateY(-1rem) translateX(.15rem);
+}
+.form-floating>.form-control:focus~label::after{
+    background-color: transparent;
+}
+.login-page-content,.signup-page-content{
+    background-image: linear-gradient(to bottom,rgb(214, 203, 203),rgb(123, 118, 143),rgb(196, 124, 124),rgb(243, 193, 193));
+    padding-inline: 6.25rem;
+    border-radius: 5%;
+}
+.form-floating>input[type="email"],.form-floating>input[type="text"],.form-floating>input[type="password"]{
+    background-color: transparent;
+    border:none;
+    color: #fff;
+}
+.form-floating>input[type="email"]:focus,.form-floating>input[type="password"]:focus{
+    outline: none;
+}
+.form-floating>.form-control:not(:placeholder-shown)~label{
+    color: #fff;
+    
+}
+.form-floating>.form-control:not(:placeholder-shown)~label::after{
+    background-color: transparent;
+    color: #fff;
+    
+}
+.close{
+    top: 0px;
+    right: 0px;
+    font-size: 18px;
+    padding: 10px 10px;
+    cursor: pointer;
+    background-color: #000;
+    border-bottom-left-radius: 15px;
+}
+input.form-control{
+    color: #ffffff;
+}
+#registerBtn{
+    background-color: transparent;
+    display: inline-block;
+    margin-top: 0;
+    padding-top: 0;
+    height: fit-content;
+}
+
+@media screen and (min-width:0px) and (max-width:500px){
+    h2{
+        font-size: 28px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    #loginBtn,#signupBtn{
+        font-size: 16px;
+        padding-inline: 15px;
+    }
+    .signup-page-content{
+        min-width: 90%;
+    }
+}
+@media screen and (min-width:501px) and (max-width:760px){
+    h2{
+        font-size: 32px;
+    }
+    h3{
+        font-size: 25px;
+    }
+    .login-page-content{
+        min-width: 100%;
+    }
+    .signup-page-content{
+        min-width: 80%;
+    }
+}
+@media screen and (min-width:761px) and (max-width:992px){
+    h2{
+        font-size:36px;
+    }
+    h3{
+        font-size: 26px;
+    }
+    .login-page-content{
+        min-width: 100%;
+    }
+}
+@media screen and (min-width:993px) and (max-width:1200px){
+    .login-page-content{
+        min-width: 60%;
+    }
+
+}

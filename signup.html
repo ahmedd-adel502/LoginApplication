@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration</title>
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="icon" href="images/favicon.png">
+</head>
+<body>
+    <section class="signup-log min-vh-100 d-flex justify-content-center align-items-center">
+        <div class="signup-page-content w-50 mx-auto text-center text-white  py-4 position-relative overflow-hidden" id="signUpForm">
+            <span class="close position-absolute" id="closeBtn"><i class="fa fa-close"></i></span>
+            <h2 class="fw-bold mb-5">Registeration</h2>
+            <form>  
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control border-bottom border-black border-2" id="nameInput" placeholder="Name" autocomplete>
+                    <label for="nameInput">Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control border-bottom border-black border-2" id="emailInput" placeholder="Email" autocomplete>
+                    <label for="emailInput">Email</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control border-bottom border-black border-2" id="passwordInput" placeholder="Password">
+                    <label for="passwordInput">Password</label>
+                </div>
+                <div class="register d-flex justify-content-center">
+                    <button type="button" class="login-login d-block w-100 my-4 btn btn-primary py-2" id="signUp">Register</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/signup.js"></script>
+</body>
+</html>

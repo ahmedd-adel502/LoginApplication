@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Application</title>
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet"     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <main class="min-vh-100 position-relative">
+        <section class="home-login min-vh-100">
+            <div class="d-flex justify-content-center align-items-center vh-100" id="homeLogin">
+                <div class="container">
+                    <div class="home-content mb-5 text-center">
+                        <h2 class="mb-5 pacifico fw-bold">Welcome To Our Site!<span class="d-inline-block hand">👋</span></h2>
+                        <h3 class="mb-5 pacifico fw-bold">Please Login or SignUp To Continue!</h3>
+                        <button type="button" class="mx-3  px-5 py-2 login btn btn-outline-info" id="loginBtn">Login</button>
+                        <button type="button" class="px-5 py-2 btn btn-outline-warning" id="signupBtn">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="login-page vh-100 position-absolute start-0 end-0 top-0 bottom-0 z-2 d-flex justify-content-center align-items-center d-none" id="loginMenu">
+            <div class="container">
+               <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 w-100">
+                    <div class="login-page-content w-50 mx-auto text-center text-white  py-4 position-relative overflow-hidden">
+                        <span class="close position-absolute" id="closeBtn"><i class="fa fa-close"></i></span>
+                        <h2 class="fw-bold mb-5">Login</h2>
+                        <form>  
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control border-bottom border-black border-2" id="emailInput" placeholder="Email" autocomplete>
+                                <label for="emailInput">Email</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control border-bottom border-black border-2" id="passwordInput" placeholder="Password">
+                                <label for="passwordInput">Password</label>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="check-input">
+                                    <input type="checkbox" name="remember" id="rememberMe">
+                                    <label for="rememberMe">Remember me </label>
+                                </div>
+                                <a href="#" class="text-decoration-none text-white">Forgot Password ?</a>
+                            </div>
+                            <button type="button" class="login-login d-block w-100 my-4 btn btn-primary py-2" id="innerLogin">Login</button>
+                            <div class="register d-flex justify-content-center">
+                                <p>Don't have an account?</p>
+                                <a href="signup.html" class="mx-1 text-decoration-none text-black fw-semibold border-0 p-0 m-0" id="registerBtn">Register</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+               </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
